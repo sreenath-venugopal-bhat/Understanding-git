@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <nav>
+      <p class="pt-serif-bold logo">Word<span>Nest</span></p>
+
+      <div class="nav-links">
+        <a href="#feature-section">Features</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-text">
+        <h1 class="edu-nsw-act-cursive-hero-heading">
+          "Your Personal Blog Sanctuary"
+        </h1>
+        <p class="coming-soon-regular">
+          Discover, Save, and Organize Your Favorite Writings
+        </p>
+        <form action="/posts" method="GET">
+          <input type="submit" value="Get Started" class="hero-btn" />
+        </form>
+      </div>
+
+      <img src="/images/Home page vector.png" alt="blog-vector-image" />
+    </div>
+    <div class="features" id="feature-section">
+      <h2 class="logo">Why use Word<span>Nest</span>?</h2>
+      <p class="feature-intro">
+        At WordNest, we believe every great piece of writing deserves a home.
+        Whether you're an avid reader collecting inspiring articles or a writer
+        curating your own thoughts, our platform lets you:
+      </p>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>✍️ Write & Save</h3>
+          <p class="single-single-feature">
+            Easily store blogs, articles, or personal notes in one place.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h3>🔍 Explore & Collect</h3>
+          <p class="single-single-feature">
+            Keep track of posts from your favorite authors.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h3>✏️ Edit & Refine</h3>
+          <p class="single-single-feature">
+            Tweak saved content to make it your own.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h3>🗑️ Manage Freely</h3>
+          <p class="single-single-feature">
+            Delete or update entries whenever you choose.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      © <%= year %> WordNest. All rights reserved.
+    </footer>
+  </body>
+</html>

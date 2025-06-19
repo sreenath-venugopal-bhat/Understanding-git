@@ -1,0 +1,199 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: #f5f6fa;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0.5rem 4rem;
+        border-radius: 1rem;
+      }
+      .logo {
+        font-size: 40px;
+        font-weight: bold;
+        color: #485758;
+      }
+      .logo > span {
+        color: #799cab;
+      }
+      nav a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+      .hero {
+        height: 88vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        width: 100%;
+        padding: 0rem 4rem;
+      }
+      .hero img {
+        height: 30rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        letter-spacing: -0.85px;
+        line-height: 2;
+      }
+      .hero h1 > span {
+        font-size: 1.8rem;
+      }
+      .hero-btn {
+        background-color: #2e6b31eb;
+        padding: 0.5rem 1.3rem;
+        color: white;
+        border: none;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        cursor:pointer;
+      }
+      .features{
+        margin: auto;
+        margin-top: 2rem;
+        line-height: 2rem;
+        padding:4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1.2rem;
+      }
+      .features h2{
+        font-size: 30px;
+      }
+      .feature-intro{
+        color:grey;
+        font-size:1.3rem;
+        text-align: center;
+        max-width: 70%;
+        margin: auto;
+      }
+      .feature-list{
+        display: flex;
+        gap:1.2rem;
+        margin-top: 2rem;
+      }
+      .feature-item{
+        padding:.85rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        cursor:pointer;
+        border-radius: .7rem;
+      }
+      .feature-item p{
+        color: grey;
+      }
+      .feature-item:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #799cab;
+        height:4rem;
+        margin-top: 5rem;
+        color:white;
+      }
+      .pt-serif-bold {
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .coming-soon-regular {
+        font-family: "Coming Soon", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+      }
+
+      .roboto-condensed-heading {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .edu-nsw-act-cursive-hero-heading {
+        font-family: "Edu NSW ACT Cursive", cursive;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+  /* tablet */
+  @media (max-width:1024px) {
+    .logo{
+      font-size: 30px;
+    }
+    .hero{
+      gap:1rem;
+    }
+    .hero img{
+      height:13rem;
+    }
+    .hero h1{
+      font-size: 1.6rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .hero p{
+      font-size: 1.1rem;
+    }
+    .hero-btn{
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    .feature-list{
+      flex-direction: column;
+    }
+    .feature-intro{
+      font-size: 1rem;
+      line-height: 1.5rem;
+      max-width: 100%;
+    }
+    .features h2{
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width:520px){
+    .logo{
+      font-size: 20px;
+    }
+    nav{
+      padding: 1rem;
+    }
+    nav a{
+      font-size: 1rem;
+    }
+    .hero{
+      flex-direction: column-reverse;
+      gap:4rem;
+      text-align: center;
+    }
+    .feature-list{
+      gap: 1.5rem;
+    }
+    
+    .feature-item{
+      padding: 1.2rem;
+    }
+    footer{
+      margin-top:2rem;
+      font-size: .8rem;
+    }
+  }

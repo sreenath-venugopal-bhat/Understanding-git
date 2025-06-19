@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordNest</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2.5rem;
+      }
+      nav input {
+        font-size: 1rem;
+        padding: 0.6rem;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: #2e6b31eb;
+      }
+      .back {
+        background-color: grey;
+      }
+      .heading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .post-container {
+        max-width: 50rem;
+        margin: auto;
+      }
+      .author {
+        text-align: end;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+      }
+      .content p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        text-indent: 100px;
+        line-height: 2rem;
+      }
+      .timendate{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 2rem;
+        color: grey;
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <form action="/posts" method="GET">
+        <input type="submit" value="Back" class="back" />
+      </form>
+      <form action="/editpost/<%= id %>" method="GET">
+        <input type="submit" value="Edit Post" class="edit" />
+      </form>
+    </nav>
+    <div class="post-container">
+      <p class="heading"><%= title %></p>
+      <p class="author">Author - <%= author %></p>
+      <div class="content"><%- content %></div>
+      <div class="timendate">
+         <p class="date">Posted on : <%= date %> at <%= time %></p>
+      </div>
+     
+    </div>
+  </body>
+</html>
